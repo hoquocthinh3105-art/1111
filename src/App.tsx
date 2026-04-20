@@ -5999,11 +5999,15 @@ const LoginPage = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden transition-all duration-1000">
-      {/* Cinematic Background */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/10 blur-[150px] rounded-full" />
-        <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20" />
-      </div>
+      {/* Login Background Image */}
+<div className="absolute inset-0 -z-10">
+  <img
+    src="/login-bg.jpg"
+    alt="Login background"
+    className="w-full h-full object-cover"
+  />
+  <div className="absolute inset-0 bg-slate-950/70" />
+</div>
 
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
